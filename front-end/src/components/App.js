@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../../public/styling/App.css';
 
-import WorryList from './worry_list'
+import WorryList from './worry_list';
+import CreateWorry from './create_worry';
 
 const worry = [
   {
@@ -28,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <div>~ Welcome to WorriR ~</div>
-        <div>this is where the add worry will be</div>
+        <CreateWorry />
         <WorryList worry={this.state.worry} />
       </div>
     );
