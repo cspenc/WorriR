@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 
 class CreateWorry extends Component {
 
-  handleCreate(event) {
-    event.preventDefault();
-
-    console.log(this.props.creatWorry);
-  }
-
   render() {
     return (
       <div>
@@ -18,6 +12,13 @@ class CreateWorry extends Component {
       </div>
     )
   }
+
+  handleCreate(event) {
+    event.preventDefault();
+
+    this.props.createWorry(this.refs.createWorry.value);
+  }
+  
 }
 
 export default CreateWorry;
