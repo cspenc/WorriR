@@ -4,13 +4,15 @@ class CreateWorry extends Component {
 
   handleCreate(event) {
     event.preventDefault();
+
+    console.log(this.refs.worry.value);
   }
 
   render() {
     return (
       <div>
         <form onSubmit={this.handleCreate.bind(this)}>
-          <input type="text" placeholder="worry" />
+          <input type="text" placeholder="worry" ref="worry" />
           <button>Add</button>
         </form>
       </div>

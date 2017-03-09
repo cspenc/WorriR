@@ -30,7 +30,10 @@ class App extends Component {
       <div className="App">
         <div>~ Welcome to WorriR ~</div>
         <CreateWorry />
-        <WorryList worry={this.state.worry} />
+        <WorryList
+          worry={this.state.worry}
+          createWorry={this.createWorry.bind(this)}
+         />
       </div>
     );
   }
