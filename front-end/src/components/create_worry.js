@@ -5,7 +5,7 @@ class CreateWorry extends Component {
   handleCreate(event) {
     event.preventDefault();
 
-    console.log(this.refs.worry.value);
+    console.log(this.props.creatWorry);
   }
 
   render() {

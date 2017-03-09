@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <div>~ Welcome to WorriR ~</div>
-        <CreateWorry />
+        <CreateWorry createWorry={this.createWorry.bind(this)} />
         <WorryList
           worry={this.state.worry}
           createWorry={this.createWorry.bind(this)}
