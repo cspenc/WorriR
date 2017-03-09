@@ -37,6 +37,15 @@ class App extends Component {
       </div>
     );
   }
+
+  createWorry(worry) {
+    this.state.worry({
+      worry,
+      worried: false
+    });
+    this.setState({ worry: this.state.worry });
+  }
+
 }
 
 export default App;
