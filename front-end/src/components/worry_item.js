@@ -32,7 +32,8 @@ class WorryItem extends Component {
   render() {
     return (
       <li>
-        {this.props.worry}
+        {this.props.worry} -- 
+        {this.props.worried ? 'FINISHED HEHE' : 'NAH PLAYA'}
         {this.renderActions()}
       </li>
     )
