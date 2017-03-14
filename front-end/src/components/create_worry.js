@@ -16,9 +16,9 @@ class CreateWorry extends Component {
   handleCreate(event) {
     event.preventDefault();
 
-    this.props.createWorry(this.refs.createWorry.value);
+    this.props.createWorry(this.refs.worry.value);
   }
-  
+
 }
 
 export default CreateWorry;

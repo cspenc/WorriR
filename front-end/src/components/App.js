@@ -39,7 +39,7 @@ class App extends Component {
   }
 
   createWorry(worry) {
-    this.state.worry({
+    this.state.worry.push({
       worry,
       worried: false
     });
