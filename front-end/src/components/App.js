@@ -32,7 +32,7 @@ class App extends Component {
         <CreateWorry createWorry={this.createWorry.bind(this)} />
         <WorryList
           worry={this.state.worry}
-          createWorry={this.createWorry.bind(this)}
+          // toggleWorry={this.toggleWorry.bind(this)}
          />
       </div>
     );
@@ -45,6 +45,10 @@ class App extends Component {
     });
     this.setState({ worry: this.state.worry });
   }
+
+  // toggleWorry(worry) {
+  //
+  // }
 
 }
 
