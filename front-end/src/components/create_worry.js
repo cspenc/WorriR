@@ -17,6 +17,7 @@ class CreateWorry extends Component {
     event.preventDefault();
 
     this.props.createWorry(this.refs.worry.value);
+    this.refs.worry.value = '';
   }
 
 }
